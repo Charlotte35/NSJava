@@ -68,4 +68,4 @@ public class Shot extends Lens {
 	public void setFarFocusLimit (float pFarFocusLimit){
 		farFocusLimit=pFarFocusLimit;
 	}
-}		
+}	
