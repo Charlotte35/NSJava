@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Main extends Shot {
 
 	public static void main(String[] args) {
-		// Objet accessibles sans paramètres
+		// Objet accessibles sans paramÃ¨tres
 		CameraBody cameraBody = new CameraBody();
 		Lens lens = new Lens();
 		Shot shot = new Shot();
 
-		// Objets accessibles avec paramètres
+		// Objets accessibles avec paramÃ¨tres
 		/*
 		 * Lens l1 = new Lens (); Shot s1 = new Shot (); CameraBody c1 = new
 		 * CameraBody ();
@@ -20,7 +20,7 @@ public class Main extends Shot {
 
 		System.out
 				.println("Bienvenue dans le programme de calcul de profondeur de champ\n");
-		System.out.println("Veuillez entrer vos données :\n");
+		System.out.println("Veuillez entrer vos donnÃ©es :\n");
 
 		while (lens.focalLength == 0 || lens.maxAperture == 0
 				|| lens.focusDistance == 0 || cameraBody.circleOfConfusion == 0) {
@@ -37,26 +37,26 @@ public class Main extends Shot {
 			case 1:
 				System.out.println("Entrez la longueur focale en mm.");
 				lens.focalLength = sc.nextInt();
-				System.out.println("Vous avez entré : " + lens.focalLength
+				System.out.println("Vous avez entrÃ© : " + lens.focalLength
 						+ "mm.\n");
 				break;
 			case 2:
 				System.out.println("Entrez l'ouverture de l'objectif en mm.");
 				lens.maxAperture = sc.nextInt();
-				System.out.println("Vous avez entré : " + lens.maxAperture
+				System.out.println("Vous avez entrÃ© : " + lens.maxAperture
 						+ " mm.\n");
 				break;
 			case 3:
 				System.out.println("Entrez la distance du sujet en m.");
 				lens.focusDistance = sc.nextInt();
-				System.out.println("Vous avez entré : " + lens.focusDistance
+				System.out.println("Vous avez entrÃ© : " + lens.focusDistance
 						+ "m.\n");
 				break;
 			case 4:
 				System.out
 						.println("Entrez le cercle de confusion de l'appareil en mm.");
 				cameraBody.circleOfConfusion = sc.nextFloat();
-				System.out.println("Vous avez entré : "
+				System.out.println("Vous avez entrÃ© : "
 						+ cameraBody.circleOfConfusion + "mm.\n");
 				break;
 			}

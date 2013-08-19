@@ -2,25 +2,25 @@
 public class Shot extends Lens {
 
 	/*
-	 * 1 boitier + 1 objectif + paramètres de mise au point effectifs et donne
+	 * 1 boitier + 1 objectif + paramÃ¨tres de mise au point effectifs et donne
 	 * la dof, hyperfocale pour une certaine ouverture et focale
 	 */
 
 	protected float nearFocusLimit, hyperfocale, depthOfField, farFocusLimit;
 
-	// Constructeur par défaut
+	// Constructeur par dÃ©faut
 	public Shot() {
-		System.out.println("Création d'une prise de vue");
+		System.out.println("CrÃ©ation d'une prise de vue");
 		hyperfocale = 0f;
 		nearFocusLimit = 0f;
 		farFocusLimit = 0f;
 		depthOfField = 0f;
 	}
 
-	// Constructeur avec des paramètres
+	// Constructeur avec des paramÃ¨tres
 	public Shot(float hyperfocale, float nearFocusLimit, int depthOfField,
 			int farFocusLimit) {
-		System.out.println("Création d'une prise de vue avec des paramètres");
+		System.out.println("CrÃ©ation d'une prise de vue avec des paramÃ¨tres");
 		this.hyperfocale = hyperfocale;
 		this.nearFocusLimit = nearFocusLimit;
 		this.farFocusLimit = farFocusLimit;
@@ -54,22 +54,22 @@ public class Shot extends Lens {
 
 	// *********************MUTATEURS**********************
 
-	// Définit la distance Hyperfocale
+	// DÃ©finit la distance Hyperfocale
 	public void setHyperfocal(float pHyperfocale) {
 		hyperfocale = pHyperfocale;
 	}
 
-	// Définit la distance minimum
+	// DÃ©finit la distance minimum
 	public void setNearFocusLimit(float pNearFocusLimit) {
 		nearFocusLimit = pNearFocusLimit;
 	}
 
-	// Définit la profondeur de champ
+	// DÃ©finit la profondeur de champ
 	public void setDepthOfField(float pDepthOfField) {
 		depthOfField = pDepthOfField;
 	}
 
-	// Définit la distance maximum
+	// DÃ©finit la distance maximum
 	public void setFarFocusLimit(float pFarFocusLimit) {
 		farFocusLimit = pFarFocusLimit;
 	}

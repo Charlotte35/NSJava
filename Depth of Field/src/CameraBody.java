@@ -4,15 +4,15 @@ public class CameraBody {
 	/* Choose the camera, film format or circle of confusion */
 	protected float circleOfConfusion;
 
-	// Constructeur par défaut
+	// Constructeur par dÃ©faut
 	public CameraBody() {
-		System.out.println("Création d'un boîtier");
+		System.out.println("CrÃ©ation d'un boÃ®tier");
 		circleOfConfusion = 0f;
 	}
 
-	// Constructeur avec des paramètres
+	// Constructeur avec des paramÃ¨tres
 	public CameraBody(float circleOfConfusion) {
-		System.out.println("Création d'un boîtier avec des paramètres");
+		System.out.println("CrÃ©ation d'un boÃ®tier avec des paramÃ¨tres");
 		this.circleOfConfusion = circleOfConfusion;
 	}
 
@@ -25,7 +25,7 @@ public class CameraBody {
 
 	// ****************MUTATEURS*****************
 
-	// Définit le cercle de confusion
+	// DÃ©finit le cercle de confusion
 	public void setCircleOfCondusion(float pCircleOfConfusion) {
 		circleOfConfusion = pCircleOfConfusion;
 	}

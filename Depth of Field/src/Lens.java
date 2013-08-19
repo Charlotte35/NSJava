@@ -9,17 +9,17 @@ public class Lens extends CameraBody {
 	/* Distance du sujet */
 	protected int focusDistance;
 
-	// Constructeur par défaut
+	// Constructeur par dÃ©faut
 	public Lens() {
-		System.out.println("Création d'un objectif");
+		System.out.println("CrÃ©ation d'un objectif");
 		focalLength = 0;
 		maxAperture = 0;
 		focusDistance = 0;
 	}
 
-	// Constructeur avec paramètres
+	// Constructeur avec paramÃ¨tres
 	public Lens(int focaleLenght, int aperture, int focusDistance) {
-		System.out.println("Création d'un objectif avec des paramètres");
+		System.out.println("CrÃ©ation d'un objectif avec des paramÃ¨tres");
 		this.focalLength = focaleLenght;
 		this.maxAperture = aperture;
 		this.focusDistance = focusDistance;
@@ -43,17 +43,17 @@ public class Lens extends CameraBody {
 	}
 
 	// *********************MUTATEURS**********************
-	// Définit la taille de l'objectif
+	// DÃ©finit la taille de l'objectif
 	public void setFocaleLenght(int pFocaleLenght) {
 		focalLength = pFocaleLenght;
 	}
 
-	// Définit l'ouverture de l'objectif
+	// DÃ©finit l'ouverture de l'objectif
 	public void setAperture(int pAperture) {
 		maxAperture = pAperture;
 	}
 
-	// Définit la distance du sujet
+	// DÃ©finit la distance du sujet
 	public void setFocusDistance(int pFocusDistance) {
 		focusDistance = pFocusDistance;
 	}
